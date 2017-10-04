@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-  vector <vector <string> > wordGrid;
+    vector <vector <string> > wordGrid;
 
   /*
      do not edit this space
@@ -24,10 +24,14 @@ int main()
   //the first and second blanks should be replaced with the coordinates
   //of the element's row and column and the third blank should be replaced
   //with the value of that element
-
-  
-
-
+ 
+    for( int r = 0; r < wordGrid.size(); r++)
+    {                    
+       for(int c = 0; c < wordGrid[r].size(); c++)
+       {
+           cout << "Row " << r << "Column " << c << "is "<< wordGrid[r][c] << endl;
+       }           
+    }
 
  return 0;
 }
